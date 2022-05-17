@@ -1,0 +1,39 @@
+:root{
+    --fuentePrincipal:'Fredoka One', cursive;
+    --fuenteSecundaria:'Koulen', cursive;
+    --colorPrincipal:#BE61FF;
+    --colorSecundario:#9327FF;
+    --colorTercero:#FEE8FE;
+    --colorCuarto:#5712DB;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Titulo */
+
+.body{
+    color: var(--colorTercero);
+}
+.header__contenido{
+    background-color: var(--colorPrincipal);
+    display: flex;
+    justify-content: center;
+    color: var(--colorTercero);
+}
+.header__titulo{
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+}
+.header__icono{
+    font-size: 3rem;
+}
