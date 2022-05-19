@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cita Nutriologo</title>
+    <title>Solicitud para Ayudar el medio Ambiente</title>
     <!-- Adaptabilidad a caualquier navegador  -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -18,24 +18,72 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <div class="header__contenido">
-            <h2 class="header__titulo">Solicitar una cita</h2>
-            <i class="fa-solid fa-user-doctor header__icono"></i>
-        </div>
-    </header>
     <main>
         <section>
-            <div>
-                <form>
-                    <input type="username" placeholder="ismael123">
-                    <input type="submit" value="enviar">
-                    <input type="email" placeholder="ismael@hjo.com">
-                    <input type="submit" value="enviar">
-                    <input type="password" placeholder="contraseña">
-                    <input type="submit" value="enviar">
-                </form>
-            </div>
+            <form class="formulario" >
+                <div class="formulario__contenedor">
+                    <div class="contenedor__nombre">
+                        <i class="fa-solid fa-user tamano dentro"></i>
+                        <input class="contenedor__input tamano" type="text" placeholder="Nombre">
+                    </div>
+                    <div class="contenedor__nombre">
+                        <i class="fa-solid fa-envelope tamano dentro"></i>
+                        <input class=" contenedor__input tamano" type="mail" placeholder="Email">
+                    </div>
+                    <div class="contenedor__sexo">
+                        <label class="contenedor__titulo tamano ">sexo:</label>
+                        <br>
+                        <br>
+                        <label class="contenedor__separador tamano"> Hombre</label>
+                        <input class="tamano" type="radio">
+                        <label class=" contenedor__separador tamano">Mujer</label>
+                        <input class=" tamano" type="radio">
+                    </div>
+                    <div class="contenedor__fecha">
+                        <label class="tamano">Fecha de Nacimiento:</label>
+                        <br>
+                        <br>
+                        <input class="contenedor__input tamano" type="date">
+                    </div>
+
+                    <div class="contenedor__pregunta1">
+                        <label class="tamano"> Hay algo que puedo hacer por el cambio climatico?</label>
+                        <br>
+                        <br>
+                        <label class="tamano">Si</label>
+                        <input class="tamano" type="radio">
+                        <label class="tamano">No</label>
+                        <input class="tamano" type="radio">
+                        <br>
+                        <br>
+                        <label class="tamano">Por que ?</label>
+                        <input class="contenedor__input tamano" type="chckbox">
+                    </div>
+
+                    <div class="contenedor__pregunta2">
+                        <label class="tamano">Es inutil frenar el cambio climatico?</label>
+                        <br>
+                        <br>
+                        <label class="tamano">Si</label>
+                        <input class="tamano" type="radio">
+                        <label class="tamano">No</label>
+                        <input class="tamano" type="radio">
+                        <br>
+                        <br>
+                        <br>
+                        <label class="tamano">Por que ?</label>
+                        <input class=" contenedor__input tamano" type="chckbox">
+                    </div>
+
+                    <div class="contenedor__pregunta3">
+                        <label class="tamano">Por que quieres ayudar a cuidar el medio ambiente?</label>
+                        <input class="contenedor__input tamano" type="chckbox">
+                    </div>
+                    <div class="contenedor__boton">
+                        <input class=" boton tamano" type="submit" value="Envia Solicitud">
+                    </div>
+                </div>
+            </form>
         </section>
     </main>
 </body>
